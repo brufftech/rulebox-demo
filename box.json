@@ -1,0 +1,35 @@
+{
+    "name":"lunch",
+    "version":"1.0.0",
+    "author":"You",
+    "location":"",
+    "slug":"lunch",
+    "createPackageDirectory":false,
+    "type":"mvc",
+    "keywords":"",
+    "homepage":"",
+    "documentation":"",
+    "repository":{
+        "type":"",
+        "url":""
+    },
+    "bugs":"",
+    "shortDescription":"",
+    "contributors":[],
+    "ignore":[],
+    "devDependencies":{
+        "testbox":"^4.0.0"
+    },
+    "installPaths":{
+        "coldbox":"coldbox",
+        "testbox":"testbox",
+        "rulebox":"modules/rulebox/",
+        "cborm":"modules/cborm/"
+    },
+    "dependencies":{
+        "coldbox":"^6.0.0",
+        "rulebox":"^1.0.0+13",
+        "cborm":"^4.4.0-snapshot"
+    },
+    "scripts":{}
+}

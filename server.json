@@ -1,0 +1,10 @@
+{
+    "app":{
+        "cfengine":"adobe@2023"
+    },
+    "web":{
+        "rewrites":{
+            "enable":"true"
+        }
+    }
+}
