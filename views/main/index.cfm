@@ -46,9 +46,9 @@
 							</div>
 							<div class="d-flex gap-2 w-100 justify-content-between">Assitance Question</div>
 						</a>
-				</div>			
+					</div>			
+				</div>
 			</div>
-
 			<div class="col d-flex align-items-start">
 				<div>
 					<h2 class="text-blue">Tests</h2>
@@ -75,9 +75,6 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
-
 	</div>
-
-	</cfoutput>
+</cfoutput>
