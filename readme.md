@@ -1,33 +1,35 @@
-# Simple Template
+## Demo of RuleBox and TestBox
 
-A simple ColdBox MVC template
+Supporting code for "Build a Complex Web Form with RuleBox and TestBox" presentation at ColdFusion Summit 2023.
+Site uses the Simple ColdBox template https://github.com/coldbox-templates/simple
 
-## License
-Apache License, Version 2.0.
+## What It Does
 
-## Important Links
+Shows how to use RuleBox and TestBox to handle the logic for mixing primary colors.
+That's a working demo with a basic input form.
 
-Source Code
-- https://github.com/coldbox-templates/simple
+Includes an example of how to apply the same concept to handle the conditional logic of a web form, using RuleBox to determine if questions should be shown or skipped.
+That example is based on the USDA's Prototype Application for free and reduced price school meals: https://www.fns.usda.gov/cn/applying-free-and-reduced-price-school-meals
+Note: I didn't write all the ORM goodness for this example, but the algorithm is solid. 
+
+## Where to Look
+See modules_app/utilities/models for the example RuleBox code
+See tests/specs/unit for the example TestBox code
+See formLogicFunctions.cfc for a simple example of using RuleBox for branching logic
+See questionFlowService.cfc for the algorithm to do that with abstraction (repeatable for all question branches)
+Note: The algorithm is solid, but I didn't write all the ORM goodies for this example. If you want to run it, you'll need to write the code to create the objects and set up CBORM (https://github.com/coldbox-modules/cborm).
 
 ## Quick Installation
 
-Each application templates contains a `box.json` so it can leverage [CommandBox](http://www.ortussolutions.com/products/commandbox) for its dependencies.  
-Just go into each template directory and type:
+1. Copy code into a directory
+2. Start a server (Easy to do with Commandbox: https://www.ortussolutions.com/products/commandbox)
 
-```
-box install
-```
+Tested with ColdFusion 2023
 
-This will setup all the needed dependencies for each application template.  You can then type:
+## References
 
-```
-box server start
-```
+RuleBox: https://github.com/coldbox-modules/rulebox
+TestBox: https://github.com/Ortus-Solutions/TestBox
+ColdBox: https://github.com/ColdBox
 
-And run the application.
-
----
- 
-###THE DAILY BREAD
- > "I am the way, and the truth, and the life; no one comes to the Father, but by me (JESUS)" Jn 14:1-12
+Thanks to Ortus Solutions (https://www.ortussolutions.com/) for these quality open source tools.
